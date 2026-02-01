@@ -9,5 +9,6 @@ RUN mvn clean package -DskipTests
 FROM amazoncorretto:17-alpine
 WORKDIR /usr/app
 COPY --from=build /workspace/target/*.jar .
+EXPOSE 9094
 CMD ["java", "-jar", "springboot_app_docker1.jar"]
 
