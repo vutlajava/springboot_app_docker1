@@ -10,7 +10,7 @@ public class Controller1 {
 	@GetMapping("/hello")
 	public String getData() {
 		
-		return "Hello Rest Api1";
+		return "Hello Rest Controller";
 	}
 
 }
